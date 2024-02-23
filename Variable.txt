@@ -1,0 +1,37 @@
+Python: It's a HighLevel, Interpreted, Dynamically Typed Language.
+HighLevel: So, here we don't need to rememnber the system architecture or manage the memory
+Interpreted: Code we create, run line-by-line
+Dynamically Typed: It will allocate datatypes while in runtime. That's is why we don't need to specify it's datatype while initialization.
+
+Variable: which is used to store a paticular value/word to use it through out the program.
+Type Convertion Methods: 
+Def: Changing an Object datatype to another datatype.
+Implicit: It will automatically convert given item datatype while run time.  
+Ex: num1 = 10      // <class 'int'>
+    num2 = 10.2        // <class 'float'>
+    sum = num1 + num2
+    print(sum)        // 20.2
+    print(type(sum))  // <class 'float'>
+
+Explicit: if we wantedly make it happen.
+Ex: Function       Conversion
+    int()          string,float->int
+    float()        string,int->float
+    str()          int, float, list, tuple, dictionary -> string
+    list()         string, tuple, dictionary, set -> list
+    tuple()        string, list, set ->tuple
+    set()          string, list, tuple -> set
+    complex()      int, float -> complex
+
+Problem: Find Duplicate Number in a given list of numbers Using Python.
+		https://leetcode.com/problems/lemonade-change/solution/
+
+
+
+
+
+
+
+
+
+
