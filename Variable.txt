@@ -1,5 +1,5 @@
 Python: It's a HighLevel, Interpreted, Dynamically Typed Language.
-HighLevel: So, here we don't need to rememnber the system architecture or manage the memory
+HighLevel: So, here we don't need to remember the system architecture or manage the memory
 Interpreted: Code we create, run line-by-line
 Dynamically Typed: It will allocate datatypes while in runtime. That's is why we don't need to specify it's datatype while initialization.
 
