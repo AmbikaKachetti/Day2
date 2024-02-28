@@ -1,6 +1,6 @@
 Python Bootcamp Day3
 Topic: Strings || Lists
-Qestion 1: 
+Question 1: 
 	Why Index Starting from 0?
 Answer: 
 	It's because of OFFSET distance.
