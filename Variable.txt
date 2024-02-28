@@ -23,8 +23,23 @@ Ex: Function       Conversion
     set()          string, list, tuple -> set
     complex()      int, float -> complex
 
-Problem: Find Duplicate Number in a given list of numbers Using Python.
-		https://leetcode.com/problems/lemonade-change/solution/
+Problem:
+
+287. Find Duplicate Number in a given list of numbers Using Python.
+
+Solution: 
+
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        newList = []
+        for n in nums:
+            if n not in newList:
+                newList.append(n)
+            else:
+                return n
+
+Input: nums = [1,3,4,2,2]
+Output: 2
 
 
 
