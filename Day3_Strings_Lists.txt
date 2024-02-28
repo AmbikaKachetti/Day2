@@ -1,0 +1,100 @@
+Python Bootcamp Day3
+Topic: Strings || Lists
+Qestion 1: 
+	Why Index Starting from 0?
+Answer: 
+	It's because of OFFSET distance.
+	The distance between that particular variable from memory block.
+	Here, 
+		name = "Python"
+		name[0] = P     // here distance between P and memory block is 0
+		name[1] = y     // here distance between y and memory block is 1
+
+	That's why in every programming Language Index is always Staring from 0 only.	
+Question 2:
+	How do we define an Array?
+	How do we define List?
+	What is the difference between List and Array in Python?
+Answer: 
+	Array: 	
+		It's homogeneous data structure
+		In array datatypes of all the element should be same. So, Array is Static Data Structure.
+		Here size of the Array Fixed.
+		Example: 
+			[1, 2, 3, 4]
+			['a', 'b', 'c', 'd']
+		In python Arrays are also Dynamic. we call it Numpy Array.
+		Using Numpy we can create Dynamic Arrays.
+S
+	List:
+		It's a heterogeneous data structure
+		In List datatypes of all the elements doesn't need to be same. It will accept different datatypes also.
+		So, List is Dynamic Data Structure.
+		Here size of the List is Not Fixed.
+		Example: 
+			[1, 2, 'c', 4, 'd']
+	
+Question 3:
+	What are the different List Methods?
+Answer:
+	Method	       Description
+	append()       Adds an element at the end of the list
+	insert()       Adds an element at the specified position
+	remove()       Removes the first item with the specified value
+	pop()	       Removes the element at the specified position
+	count()	       Returns the number of elements with the specified value
+
+	Example:       
+		       0  1  2  3  4  5 <-- index positions
+	
+	numbersList = [1, 2, 3, 4, 5, 6]
+	
+	numbersList.append(7)                     // [1, 2, 3, 4, 5, 6, 7]
+	numbersList.pop()                         // [1, 2, 3, 4, 5, 6]
+	numbersList.pop(3)			  // [1, 2, 3, 5, 6]
+	numbersList.count(1)                      // 1
+	numbersList.remove(5)                     // [1, 2, 3, 6]
+	numbersList.insert(2, 9)		 //  [1, 2, 9, 3, 6]
+
+Leetcode Problem:
+	860. Lemonade Change
+Solution:
+class Solution:
+    def lemonadeChange(self, bills: List[int]) -> bool:
+        cnt5 = 0
+        cnt10 = 0
+        cnt20 = 0
+        for i in bills:
+            if(i == 5):
+                cnt5 += 1
+            elif(i == 10):
+                if (cnt5 > 0):
+                    cnt5 -= 1
+                    cnt10 += 1
+                else: 
+                    return False
+            elif(i == 20):
+                if((cnt10 > 0) and (cnt5 > 0)):
+                    cnt10 -= 1
+                    cnt5 -= 1
+                elif(cnt5 >= 3):
+                    cnt5 -= 3
+                else:
+                    return False
+        return True
+
+Input: bills = [5,5,5,10,20]
+
+Output: true
+
+Explanation: 
+From the first 3 customers, we collect three $5 bills in order.
+From the fourth customer, we collect a $10 bill and give back a $5.
+From the fifth customer, we give a $10 bill and a $5 bill.
+Since all customers got correct change, we output true.
+
+
+	
+	
+
+			
