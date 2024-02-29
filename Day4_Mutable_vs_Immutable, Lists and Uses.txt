@@ -1,0 +1,93 @@
+1. Variable: Variable is a memory container. And it's a computers way of storing data.
+   Variable declaration has some rules follow: Variable Naming Conventions
+	1. It shouldn't be statrted with a Number. Like 1a, 5name, 3address
+	   If we gave a variable name as 1a: It will through us a Syntax Error.
+	   Example: 
+		    1a = 10
+		    print(a)  // Syntaxerror: Invalid decimal literal
+
+	2. It cannot starts with Special Characters like: $, @, #, &, * and Number like: 0-9
+	   Example:
+		   $a = 10
+		   print(a)  // Syntaxerror: invalid syntax
+		   1b = 11
+		   print(1b) // SyntaxError: invalid syntax
+
+	3. We can start it with letter or underscore (A-Z, a-z, _ )
+	   Example: 
+		   name = "Python3"
+		   _a = 10
+		   print(name) // Python3
+		   print(a)    // 10
+
+	4. Variable names should always be meaningful, so that it is easy to understand what kind of operation is that variable performing.
+	   Example: 
+		   product_of_ab = a * b
+		   addition = a + b
+
+	5. Variable names in Python are case-sensitive
+	   Example: 
+		   NAME
+		   name
+		   Name  
+		All three variable names are different in Python.
+
+2. print()
+	In python we using "print()" to print the output in the console.
+		We use single quotes('') or double quotes inside print to print the strings.
+		Example: 
+			print("Python World!")
+			print('Python World!')
+		If we want to print a variable that is already defined we use variable name
+		Example:
+			a = 11
+			print(a)     // 10
+			print('a')   // a
+			print("a")   // a
+		a = 10
+		a = 'hello'
+		print(a)     // hello
+
+3. String and it's methods
+	String is a collection of alphabets, words or other characters.
+	Example:
+		name = "Python3"
+		print(name[0])    // T
+		print(name[1])    // y
+		print(name[-1])   // 3
+		print(name[::-1]) // 3nohtyP
+4. Mutable vs Immutable
+	Mutable: 
+		Once after created we can change or modify it's value.
+ 		Mutable data types in Python are those whose value can be changed in place after they have been created.
+		We can overwrite the original list, To append new values to our list "nums" without having to create another list. It's an in-place operation.
+		
+		Example: List, Set, Dictionary are Mutable
+
+	Immutable: 
+		Once it's created we can not change or modify it's value in-place.
+		when multiple users want to access same data, then memory alloaction got stuck then it is a deadlock situation.
+		To avoid this type of situations in memory allocation, Immutable DataStructures are designed. 
+		Immutable objects shift their memory address whenever they are updated.
+		Example: Integer, Float, Stings are Immutable
+			a = 20
+			print(id(a))      // 9756832
+			a = 30
+			print(id(a))	 // 9757152
+
+4. Lists(when do we use them)
+	List are used to store multiple number of values having different datatypes in a single variable.
+	It's a heterogeneous data structure.
+	Example: 
+		nums = [1, "hello]
+		print(nums.count(1))         // 1
+		print(nums.append("apples")) // [1, 'hello', 'apples']
+		print(nums.pop())            // [1, 'hello']
+		print(nums.index(1))         // 0
+
+5. Problem: Leetcode Lemonade Change Problem Solved
+	
+	
+	   
+
+	
