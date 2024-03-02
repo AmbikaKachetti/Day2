@@ -34,6 +34,7 @@ Set: Set doesn't allow duplicate value in it
 	pop(index) 	O(1)
 
 LeeetCode Problem: 26. Remove Duplicates from Sorted Array
+Method used: Here they asked to change "in-place", in place means use exited array only without creating another array. 2 pointer method used.
 Solution: 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
