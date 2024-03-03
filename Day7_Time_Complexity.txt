@@ -1,0 +1,33 @@
+What is Time Complexity?
+	Time complexity is a measure used to analyze the efficiency of algorithms in terms of the amount of time they take to execute as a function of the length 
+	of their input. It helps in understanding how the execution time of an algorithm grows with the size of the input data.
+What are the different types of time complexities?
+	Time complexity helps in choosing the most efficient algorithm for a given problem and estimating the scalability of the solution as the input size increases
+
+	Time Complexity	Name		Explanation
+
+	O(1)		Constant	The algorithm's execution time is constant, regardless of the input size. 
+	Examples include accessing an element in an array or dictionary by index.
+
+	O(log n)	Logarithmic	The algorithm's execution time grows logarithmically as the input size increases. 
+	Examples include binary search and certain efficient sorting algorithms like quicksort and mergesort.	
+
+	O(n)		Linear		The algorithm's execution time grows linearly with the size of the input. 
+	Examples include traversing through all elements in a list or array once.	
+
+	O(n log n)	Linearithmic	The algorithm's execution time grows in proportion to n times the logarithm of n. 
+	This complexity often arises in algorithms like efficient sorting algorithms such as mergesort and heapsort, which have better performance than O(n^2) sorting 
+	algorithms like bubblesort or insertion sort.
+	
+	O(n^2)		Quadratic	The algorithm's execution time grows quadratically with the size of the input. 
+	Examples include certain inefficient sorting algorithms like bubblesort or nested loops iterating over the input.
+
+	O(n^k) 		Polynomial	The algorithm's execution time grows as a polynomial function of the input size. 
+	(where k > 1)	
+	Examples include nested loops where the number of loops is fixed.
+
+	O(2^n)		Exponential	The algorithm's execution time doubles with each additional input. 
+	This is common in algorithms that solve problems through exhaustive search or recursion without memoization.
+
+	O(n!)		Factorial	The algorithm's execution time grows as a factorial of the input size. 
+	This is common in algorithms that solve permutation or combination problems through brute-force enumeration.
